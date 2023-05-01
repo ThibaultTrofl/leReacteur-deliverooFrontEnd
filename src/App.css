@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "IBM Plex Sans";
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 100%;
+}
+/* -----Header------ */
+header {
+  height: 60px;
+  border-bottom: solid 1px gray;
+}
+
+.header-box {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 25px;
+}
+
+.header-box > img {
+  height: 42px;
+}
