@@ -3,10 +3,12 @@ import "./App.css";
 import axios from "axios";
 
 import Header from "./components/Header.jsx";
+import Main from "./components/Main.jsx";
 
 function App() {
   const [data, setData] = useState();
   const [isLoading, setIsLoading] = useState(true);
+  const [isSelect, setIsSelect] = useState([]);
 
   const fetchData = async () => {
     try {
@@ -28,9 +30,8 @@ function App() {
     </>
   ) : (
     <>
-      <Header data={data} />
-
-      {/* <p>{data.restaurant.name}</p> */}
+      <Header data={data} isSelect={isSelect} setIsSelect={setIsSelect} />
+      <Main data={data} />
     </>
   );
 }

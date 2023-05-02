@@ -11,20 +11,135 @@ body {
   margin: 0 auto;
   height: 100%;
 }
-/* -----Header------ */
+
+h1 {
+  font-size: 32px;
+  font-weight: Bolder;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+h3 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+p {
+  color: #868a8a;
+}
+/* -----Header----------------------------- */
+/* -----Logo header-----*/
 header {
-  height: 60px;
-  border-bottom: solid 1px gray;
+  height: 320px;
 }
 
 .header-box {
-  height: 100%;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   padding: 25px;
+  border-bottom: solid 1px #e9ebeb;
 }
 
 .header-box > img {
   height: 42px;
+}
+
+.restaurant-box {
+  height: 257px;
+  padding: 30px;
+  display: flex;
+}
+
+/* -----Présentation restaurant-----*/
+
+.restaurant-box > img {
+  width: 350px;
+  border-radius: 5px;
+}
+
+.text-box {
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.text-box > p {
+  font-size: 19px;
+}
+
+/* -----Main----------------------------- */
+main {
+  background-color: #f3f5f5;
+  width: 100%;
+}
+
+main > .container {
+  display: flex;
+}
+.left-box {
+  /* background-color: red; */
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.right-box {
+  width: 30%;
+  /* background-color: blue; */
+}
+
+.categories {
+  width: 100%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  /* overflow: hidden; */
+  flex-wrap: wrap;
+}
+.meals {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.meal {
+  height: 160px;
+  width: 410px;
+  padding: 15px;
+  margin-bottom: 25px;
+  background-color: white;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.meal:hover {
+  cursor: pointer;
+}
+.meal > img {
+  height: 130px;
+  width: 130px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.meal-text-box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.meal-descr {
+  font-size: 0.9rem;
+  height: 2.6rem;
+  line-height: 1.3rem;
+  text-overflow: ellipsis;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

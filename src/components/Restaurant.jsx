@@ -1,8 +1,14 @@
-const Restaurant = ({ restaurant }) => {
+const Restaurant = ({ data }) => {
   return (
-    <div>
-      <h1>{restaurant.name}</h1>
-    </div>
+    <>
+      <div className="restaurant-box">
+        <div className="text-box">
+          <h1>{data.name}</h1>
+          <p>{data.description}</p>
+        </div>
+        <img src={data.picture} alt="Table contenant des plats du restaurant" />
+      </div>
+    </>
   );
 };
 
