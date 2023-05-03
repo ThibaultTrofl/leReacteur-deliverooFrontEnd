@@ -1,6 +1,7 @@
 import Category from "./Category.jsx";
+import Cart from "./Cart.jsx";
 
-const Main = ({ data, isSelect, setIsSelect }) => {
+const Main = ({ data, isSelect, setIsSelect, total, setTotal }) => {
   //   console.log(data.categories);
   return (
     <>
@@ -15,11 +16,20 @@ const Main = ({ data, isSelect, setIsSelect }) => {
                   key={data.id}
                   setIsSelect={setIsSelect}
                   isSelect={isSelect}
+                  total={total}
+                  setTotal={setTotal}
                 />
               );
             })}
           </div>
-          <div className="right-box">Oui</div>
+          <div className="right-box">
+            <Cart
+              isSelect={isSelect}
+              setIsSelect={setIsSelect}
+              total={total}
+              setTotal={setTotal}
+            />
+          </div>
         </section>
       </main>
     </>

@@ -9,6 +9,7 @@ function App() {
   const [data, setData] = useState();
   const [isLoading, setIsLoading] = useState(true);
   const [isSelect, setIsSelect] = useState([]);
+  const [total, setTotal] = useState(0);
 
   const fetchData = async () => {
     try {
@@ -30,8 +31,14 @@ function App() {
     </>
   ) : (
     <>
-      <Header data={data} isSelect={isSelect} setIsSelect={setIsSelect} />
-      <Main data={data} />
+      <Header data={data} />
+      <Main
+        data={data}
+        isSelect={isSelect}
+        setIsSelect={setIsSelect}
+        total={total}
+        setTotal={setTotal}
+      />
     </>
   );
 }

@@ -1,6 +1,6 @@
 import Meal from "./Meal.jsx";
 
-const Category = ({ categories, isSelect, setIsSelect }) => {
+const Category = ({ categories, isSelect, setIsSelect, total, setTotal }) => {
   //   console.log("Categories: " + categories);
   //   console.log(categories.name);
   return (
@@ -16,6 +16,8 @@ const Category = ({ categories, isSelect, setIsSelect }) => {
                 key={categories.id}
                 setIsSelect={setIsSelect}
                 isSelect={isSelect}
+                total={total}
+                setTotal={setTotal}
               />
             );
           })}
