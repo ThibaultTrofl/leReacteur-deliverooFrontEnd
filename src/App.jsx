@@ -13,7 +13,9 @@ function App() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get("http://localhost:3200/");
+      const response = await axios.get(
+        "https://site--deliveroo-backend--tq978s5f6htc.code.run/"
+      );
 
       setData(response.data);
       setIsLoading(false);
