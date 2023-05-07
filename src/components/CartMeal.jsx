@@ -43,23 +43,29 @@ const CartMeal = ({
 
   return (
     <div className="cart-meal">
-      <button
-        onClick={() => {
-          handleClickMinus();
-        }}
-      >
-        -
-      </button>
-      <span>{quantity}</span>
-      <button
-        onClick={() => {
-          handleClickPlus();
-        }}
-      >
-        +
-      </button>
-      <span>{title}</span>
-      <span>{price.toFixed(2)}</span>
+      {isSelect ? (
+        <div className="cart-meal-select">
+          <div className="quantity-modif">
+            <button
+              onClick={() => {
+                handleClickMinus();
+              }}
+            >
+              -
+            </button>
+            <span>{quantity}</span>
+            <button
+              onClick={() => {
+                handleClickPlus();
+              }}
+            >
+              +
+            </button>
+          </div>
+          <span>{title}</span>
+          <span>{price}</span>
+        </div>
+      ) : null}
     </div>
   );
 };

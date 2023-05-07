@@ -10,15 +10,20 @@ const Main = ({ data, isSelect, setIsSelect, total, setTotal }) => {
           <div className="left-box">
             {data.categories.map((categories, index) => {
               // console.log(data.categories[index]);
+              console.log(categories);
               return (
-                <Category
-                  categories={categories}
-                  key={data.id}
-                  setIsSelect={setIsSelect}
-                  isSelect={isSelect}
-                  total={total}
-                  setTotal={setTotal}
-                />
+                <>
+                  {categories.meals.length > 0 ? (
+                    <Category
+                      categories={categories}
+                      key={data.id}
+                      setIsSelect={setIsSelect}
+                      isSelect={isSelect}
+                      total={total}
+                      setTotal={setTotal}
+                    />
+                  ) : null}
+                </>
               );
             })}
           </div>
