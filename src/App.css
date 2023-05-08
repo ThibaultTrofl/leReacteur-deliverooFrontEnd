@@ -198,7 +198,9 @@ main > .container {
 .cart-meal-select {
   margin: 10px 0;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  gap: 20px;
+  align-items: center;
 }
 
 .quantity-modif {
@@ -209,6 +211,9 @@ main > .container {
 .quantity-modif > button {
   all: unset;
   color: #02cdbd;
+}
+.desc-meal {
+  width: 60%;
 }
 
 .cart-detail {

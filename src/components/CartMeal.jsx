@@ -62,7 +62,7 @@ const CartMeal = ({
               +
             </button>
           </div>
-          <span>{title}</span>
+          <span className="desc-meal">{title}</span>
           <span>{price}</span>
         </div>
       ) : null}
