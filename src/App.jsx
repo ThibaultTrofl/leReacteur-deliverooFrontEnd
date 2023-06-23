@@ -14,7 +14,7 @@ function App() {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        "https://site--deliveroo-backend--tq978s5f6htc.code.run/"
+        "https://site--deliveroo-backend-v2--tq978s5f6htc.code.run/"
       );
 
       setData(response.data);
