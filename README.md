@@ -9,6 +9,13 @@ Code héberger sur NETLIFY [ici](https://relaxed-genie-bb198d.netlify.app/)
 BackEnd visonnable [ici](https://github.com/ThibaultTrofl/leReacteur-deliverooBackEnd)
   
 ------------------------------------
+On terminal :  
+
+Installation des packages ```yarn install```  
+
+Deploy on localhost ```yarn dev```  
+  
+------------------------------------
   
 ![Présentation du site](https://github.com/ThibaultTrofl/leReacteur-deliverooFrontEnd/assets/86740430/38b0b6ea-84ae-48ed-b531-aeeb9c7bcbfc)  
 
